@@ -1,0 +1,118 @@
+
+:root {
+    --primary-color: #faf39a;
+    --secondary-color: #75b387;
+    --secondaryTrans-color: rgba(132,181,131,.8);
+    overflow: hidden;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    font-family: "Gochi Hand", 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+}
+
+/* initializing */
+
+
+
+h1 {
+    font-size: 4rem;
+}
+
+p, li {
+    font-size: 2rem;
+}
+
+
+p, li, h1 {
+    margin: auto 3rem;
+}
+
+/* text styles for test */
+
+.done {
+    text-decoration: line-through;
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* real styling begins */
+
+/* main container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 7rem auto;
+}
+
+.button-container {
+    justify-content: space-between;
+    display: flex;
+}
+
+
+/* list style */
+
+ul {
+    margin: auto;
+    width: 40vw;
+    padding: 0;
+    min-width: 250px;
+}
+
+li {
+    background-color: var(--primary-color);
+    border: solid 1px var(--secondary-color);
+    border-left: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    list-style: none;
+    padding: 0px 2rem;
+    margin: auto;
+}
+
+li:first-of-type {
+    border-top: 2px solid var(--secondary-color);
+}
+
+li:last-of-type {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+/* buttons */
+
+
+button {
+    margin: .5rem;
+    color: white;
+    font-weight: 600;
+}
+
+#enter {
+    background-color: var(--secondary-color);
+}
+
+#clear {
+    background-color: rgb(251, 85, 85);
+}
+
+input {
+    padding: 4px;
+}
