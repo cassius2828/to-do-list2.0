@@ -6,7 +6,7 @@ const ul = document.querySelector("ul");
 const clear = document.getElementById("clear");
 const icons = document.querySelector("i");
 const listItems = document.querySelectorAll("li");
-const pencil = new Audio('sounds/pencil-sound.wav');
+const pencil = new Audio("sounds/pencil-sound.wav");
 
 // functions
 
